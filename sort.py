@@ -16,5 +16,5 @@ data = {
 }
 
 
-mean_key = min(data.keys(), key=lambda x: abs(convert_to_range_mean(x) - sum(map(convert_to_range_mean, data.keys())) / len(data.keys())))
+mean_key = min(data.keys(), key=lambda x: abs(sum(map(convert_to_range_mean, data.keys())) / len(data.keys())))
 print("Mean Key:", mean_key)
